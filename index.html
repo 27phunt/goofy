@@ -46,6 +46,8 @@
 <button onclick="submit('2')">Deep Thoughts</button>
 <hr><hr>
 <button onclick="submit('3')">Dad Jokes</button>
+<hr><hr>
+<button onclick="openPage(1)">Memes</button> 
  </body>
 
  
@@ -53,6 +55,10 @@
 function submit(sheet) {
 var script = "https://script.google.com/a/macros/frcsfalcons.org/s/AKfycbznERb2p5E7nC2oa-5ya_99Rvfo2mmCANeP3ChE8rtBjcAZrLq6rIxDJHPp_W6olRq9/exec"
 window.top.location.href = script+"?"+sheet
+}
+function openPage(x) {
+var pages = ["https://script.google.com/a/macros/frcsfalcons.org/s/AKfycbzPBSeQQMRQD7X2ZEDmqQ3oiAwUDFmettpcZVzRalVY5DmBcYebXlL4_Bgn2aWEjvZm/exec"]
+window.top.location.href = pages[x-1]
 }
    
    </script>
